@@ -1,12 +1,12 @@
 /*
- * SansQuery Chrome plugin
+ * openSans Chrome plugin
  * Author: Kelly Johnson
  *
  */
 
 /* globals chrome */
 
-function sansQuery(info, tab) {
+function openSans(info, tab) {
   if (info.linkUrl) {
     var url = info.linkUrl.split('?')[0];
     var options = {
@@ -23,5 +23,18 @@ function sansQuery(info, tab) {
 chrome.contextMenus.create({
   title: "Open Sans Query",
   contexts: ["link"],
-  onclick: sansQuery
+  onclick: openSans
+});
+
+function copySans(info, tab) {
+  if (info.linkUrl) {
+    var url = info.linkUrl.split('?')[0];
+    // TODO copy url to clipboard
+  }
+}
+
+chrome.contextMenus.create({
+  title: "Copy Link Sans Query",
+  contexts: ["link"],
+  onclick: copySans
 });

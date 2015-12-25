@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Open Link Sans Query",
-  "version": "0.2",
+  "name": "Sans Query",
+  "version": "1.0",
 
-  "description": "Goto a hyperlink without the query string attached.",
+  "description": "Use hyperlinks without the query string attached.",
 
   "author": "Kelly Johnson",
   "background": {
