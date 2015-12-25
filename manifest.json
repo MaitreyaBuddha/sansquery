@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Open Link Sans Query",
+  "version": "0.2",
+
+  "description": "Goto a hyperlink without the query string attached.",
+
+  "author": "Kelly Johnson",
+  "background": {
+    "scripts": ["sans.js"]
+  },
+
+  "minimum_chrome_version": "6",
+  "icons": {
+    "16": "icon-16.png"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ]
+}
